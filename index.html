@@ -48,7 +48,12 @@
 </head>
 	
 	<body>
-
+		
+		<audio autoplpay>
+			<source src="lonely.ogg" type="audio/ogg">
+			<source src="lonely.mp3" type="audio/mpeg">
+		</audio>
+		
 		<video autoplay muted loop id="myVideo">
 			<source src="vid1.mp4" type="video/mp4">
 			<source src="vid1.ogg" type="video/ogg">
@@ -59,9 +64,8 @@
 			</div>
 
 				<script>
-				var video = document.getElementById("myVideo");
-				var btn = document.getElementById("myBtn");
-				}
+					var video = document.getElementById("myVideo");
+					var btn = document.getElementById("myBtn");
 				</script>
 
 	</body>
