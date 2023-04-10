@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#E1DDC1">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+    <title> Liebe </title>
+
+    <style>
+
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+                @font-face {
+                    font-family: 'Proxima Nova Rg';
+                    src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+                    font-weight: bold;
+                    font-style: normal;
+                    font-display: swap;
+                }
+
+                @font-face {
+                    font-family: 'Proxima Nova Rg';
+                    src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+                    font-weight: normal;
+                    font-style: normal;
+                    font-display: swap;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/Century\ Gothic.woff);
+                    font-weight: 400;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/GOTHICB.woff);
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/GOTHICBI.woff);
+                    font-weight: 700;
+                    font-style: italic;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/Century\ Gothic.woff2);
+                    font-weight: 400;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/GOTHICB.woff2);
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/GOTHICBI.woff2);
+                    font-weight: 700;
+                    font-style: italic;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/Century\ Gothic.ttf);
+                    font-weight: 400;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/GOTHICB.TTF);
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Century Gothic';
+                    src: url(../fonts/GOTHICBI.TTF);
+                    font-weight: 700;
+                    font-style: italic;
+                }
+
+
+                /* ==============================
+                      General
+        ================================= */
+
+                html, body {
+                    scroll-behavior: smooth;
+                }
+
+                body {
+                    /* background-color: #E4FEFE; */
+                    background: radial-gradient(circle, rgba(91,117,116,1) 0%, rgba(76,102,102,1) 100%);
+                }
+
+                main {
+                    overflow: hidden;
+                }
+
+                h1, h2, h3, h4, h5, h6, p, a, span {
+                    font-family: 'Century Gothic';
+                    font-style: normal;
+                }
+
+                    a:hover {
+                        color: inherit;
+                        text-decoration: none;
+                    }
+
+                .font-weight-700 {
+                    font-weight: 700 !important;
+                }
+
+
+                /* ==============================
+                       Navbar
+        ================================= */
+
+                .navbar {
+                    background-color: #333333 !important;
+                }
+
+                    .navbar .navbar-brand img {
+                        height: 24px;
+                    }
+
+                    .navbar .nav-link {
+                        color: #FFF;
+                        font-family: 'Proxima Nova Rg';
+                        font-weight: bold;
+                        font-style: normal;
+                        text-transform: uppercase;
+                        margin: 8px 0 0;
+                        padding: 0;
+                    }
+
+
+
+                /* ==============================
+                    Header Hero
+        ================================= */
+
+                #header-hero {
+                    position: relative;
+                    margin-top: 56px;
+                    background: linear-gradient(0deg, #F7F6EA 50%, #E4FEFE 50%);
+                }
+
+                .header-hero-wrapper {
+                    background-color: #E4FEFE;
+                    height: max-content;
+                }
+
+                @media (min-width:768px) {
+
+                    .header-hero-wrapper {
+                        border-radius: 0px 0px 200px 0px;
+                    }
+                }
+
+                .hero-center {
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .hero-wrapper {
+                    position: relative;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    padding: 75px;
+                    padding-bottom: 0;
+                }
+
+                .hero-title-wrapper {
+                    width: 100%;
+                    max-width: 370px;
+                    margin: auto;
+                }
+
+                    .hero-title-wrapper h1 {
+                        font-weight: 700;
+                        /* font-size: 36px; */
+                        font-size: clamp(1.875rem, 1.7679rem + 0.5357vw, 2.25rem);
+                        line-height: 1.3;
+                        color: #35B6B4;
+                    }
+
+                    .hero-title-wrapper span {
+                        display: block;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #1E1E1E;
+                        margin: 30px 0;
+                    }
+
+                span.orange-span {
+                    font-weight: 700;
+                    /* font-size: 36px; */
+                    font-size: clamp(1.875rem, 1.7679rem + 0.5357vw, 2.25rem);
+                    line-height: 1.3;
+                    color: #F38800;
+                    margin: 0;
+                }
+
+                .hero-title-wrapper p {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #595A5E;
+                }
+
+                .letsgo-wrapper span {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #35B6B4;
+                }
+
+                img.hero-img {
+                    object-fit: contain;
+                    /* max-width: 420px;
+            height: 370.59px; */
+                    width: 500px;
+                    height: 500px;
+                }
+
+                .angle-down-icon {
+                    animation: myAnim 1s ease-in-out 0s infinite normal forwards;
+                }
+
+                @keyframes myAnim {
+                    0% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(5px);
+                    }
+
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+
+
+                /* ==============================
+                us
+        ================================= */
+
+                #us {
+                    background: #F7F6EA;
+                    padding: 500px 0;
+                }
+
+                .sinus-slider-wrapper {
+                    margin-bottom: 50px;
+                }
+
+                .sinus-info-wrapper {
+                    width: 100%;
+                    max-width: 630px;
+                    margin: auto;
+                    background: #35B6B4;
+                    border-radius: 20px;
+                    padding: 50px 45px;
+                }
+
+                    .sinus-info-wrapper p {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        margin-bottom: 0;
+                    }
+
+                /* slider */
+                #us .swiper {
+                    width: 500%;
+                    height: 500%;
+                    max-width: 630px;
+                }
+
+                #us .swiper-slide {
+                    text-align: center;
+                    background: transparent;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    #us .swiper-slide img {
+                        height: 500px;
+                        object-fit: contain;
+                        margin-bottom: 20px;
+                    }
+
+                    #us .swiper-slide p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #7A7A7A;
+                        margin-bottom: 0;
+                    }
+
+                    #us .swiper-slide h6 {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #35B6B4;
+                        margin: 45px 0 60px 0;
+                    }
+
+                footer {
+                    background-color: #F7F6EA;
+                    color: #FFFFFF;
+                    position: relative;
+                    z-index: 2;
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .footer-wrapper {
+                    width: 100%;
+                    background-color: #35B6B4;
+                    border-radius: 100px 100px 0px 0px;
+                    padding: 0 1.625rem;
+                }
+
+                footer .social-share-button[data-style=ghost] {
+                    color: #ffffff;
+                    border-color: #ffffff;
+                    margin-right: auto
+                }
+
+                    footer .social-share-button[data-style=ghost]:hover {
+                        background-color: #A6E3FF;
+                        color: #ffffff;
+                        border: 1px solid #A6E3FF;
+                    }
+
+                .share-container {
+                    margin: 50px 0;
+                }
+
+                .share-medklinn-wrapper {
+                    text-align: center;
+                    padding-top: 55.3px;
+                }
+
+                    .share-medklinn-wrapper p {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: #FFFFFF;
+                        margin-bottom: 0;
+                    }
+
+                        .share-medklinn-wrapper p:first-child {
+                            font-weight: 700;
+                        }
+
+                    .share-medklinn-wrapper a {
+                        width: 100%;
+                        max-width: 300px;
+                        background: #F38800;
+                        border: 2px solid #F38800;
+                        border-radius: 24px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                        padding: 10px;
+                        text-align: center;
+                        margin: 51px auto;
+                        display: block;
+                        animation: pulse 2.5s ease 0s infinite normal forwards;
+                    }
+
+                @keyframes pulse {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        transform: scale(1.05);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
+                .share-medklinn-wrapper a:hover {
+                    transform: scale(1.03);
+                }
+
+                #us .swiper-button-next:after, #us .swiper-button-prev:after {
+                    font-size: 24px;
+                    color: #7A7A7A;
+                }
+
+                #us .swiper-pagination-bullet-active {
+                    background: #35B6B4 !important;
+                }
+
+                #us .swiper-pagination-bullet {
+                    background: #7A7A7A;
+                    opacity: 1;
+                }
+
+                #us .swiper-button-next, #us .swiper-button-prev {
+                    top: 85%;
+                }
+
+                {
+                    box-sizing: border-box;
+                }
+
+                body {
+                    margin: 0;
+                    font-family: Arial;
+                    font-size: 17px;
+                }
+
+                #myVideo {
+                    position: center;
+                    right: 0;
+                    bottom: 0;
+                    min-width: 100%;
+                    min-height: 100%;
+                }
+
+                .content {
+                    position: fixed;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    color: #f1f1f1;
+                    width: 100%;
+                    padding: 20px;
+                }
+
+                #myBtn {
+                    width: 200px;
+                    font-size: 18px;
+                    padding: 10px;
+                    border: none;
+                    background: #000;
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                    #myBtn:hover {
+                        background: #ddd;
+                        color: black;
+                    }
+    </style>
+</head>
+
+<body>
+    <header id="header-hero">
+        <div class="header-hero-wrapper">
+            <div class="container-fluid hero-center">
+                <div class="row">
+                    <div class="hero-wrapper">
+                        <div class="hero-title-wrapper" data-aos="fade-in">
+                            <audio button autoplay>
+                                <source src="lonely.ogg" type="audio/ogg">
+                                <source src="lonely.mp3" type="audio/mpeg">
+                            </audio>
+                            <center>
+                                <h1>This Is Where All Started! <span class="orange-span">Imtiaz & Emir</span></h1>
+                            </center>
+                            <p><center>Everything starts with a cursed dating app called <center><span class="orange-span">Bumble</span></center></center></p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="#us" data-aos="fade-up">
+                        <div class="letsgo-wrapper text-center mt-4 mb-5">
+                            <span>Let’s find out</span>
+                            <img class="img-fluid angle-down-icon" alt="" src="img/angle-down.svg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <center>
+            <section id="us">
+                <div class="container">
+                    <div class="sinus-problem-wrapper">
+                        <div class="sinus-slider-wrapper">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img class="w-100" alt="" src="img/tiaz.jpg">
+                                            <p>Young Independent Woman:</p>
+                                        </div>
+                                        <h6>Imtiaz Amani</h6>
+                                    </div>
+                                    <center>
+                                        <div class="swiper-slide">
+                                            <div>
+                                                <img class="w-100" alt="" src="img/emir.jpg">
+                                                <p>A Lost Lamb:</p>
+                                            </div>
+                                            <h6>Amerul Emir</h6>
+                                        </div>
+                                        <iframe width="600" height="500" 
+                                                src="https://www.youtube.com/embed/7BDRFoDbUZk?autoplay=1&mute=1">
+                                        </iframe>
+                                    </center>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="sinus-info-wrapper">
+                            <p>Stay Tuned! More To Come.</p>
+                            <center><span>Made By Emir</span></center>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </center>
+
+</body>
+</html>
